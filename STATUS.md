@@ -23,26 +23,28 @@
   - **주요 파일**: 
     - `mern/DATA_PLAN.md`: 데이터 모델링 및 학습 시나리오 정의.
     - `mern/server/CODE_GUIDE.md`: 서버 코드 구조 및 역할 가이드.
-- **남은 작업**: 실제 `DATA_PLAN`에 따른 API 구현 및 프런트엔드 연동.
+- **예정 작업 (Next Steps)**:
+  1. **MERN 백엔드 구체화**: `Project`와 `Task` 모델을 작성하고 `DATA_PLAN.md`에 정의된 API 연동.
+  2. **프런트엔드 연결**: `client/src/App.tsx`에서 서버 API를 호출하여 데이터를 화면에 리스트 형태로 출력.
 
 ### ⏳ Go + MongoDB - [대기]
 - **상태**: 아키텍처 정의 완료.
-- **주요 파일**: `go/ARCHITECTURE.md`
-- **남은 작업**: `gin`, `mongo-go-driver` 설치 및 기본 CRUD 서버 구축.
 
 ### ⏳ FastAPI (Python) + MongoDB - [대기]
 - **상태**: 아키텍처 정의 완료.
-- **주요 파일**: `fastapi/ARCHITECTURE.md`
-- **남은 작업**: `motor`, `beanie`, `pydantic` 환경 구축.
 
 ### ⏳ Next.js (App Router) + MongoDB - [대기]
 - **상태**: 아키텍처 정의 완료.
-- **주요 파일**: `nextjs/ARCHITECTURE.md`
-- **남은 작업**: Next.js 프로젝트 초기화 및 MongoDB Client 연결 설정.
 
 ---
 
-## 3. 실행 방법 (MERN 기준)
+## 3. 설정 및 설치 (Configuration & Setup)
+- **MongoDB 설치 여부**: [미완료]
+  - **선택 필요**: 로컬 설치(Community Server) vs 클라우드(Atlas) 중 결정 후 `.env` 설정 업데이트 예정.
+
+---
+
+## 4. 실행 방법 (MERN 기준)
 1. `cd mern`
 2. `npm run dev` (서버와 클라이언트 동시 실행)
 
