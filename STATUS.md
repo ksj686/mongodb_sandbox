@@ -14,7 +14,7 @@
 
 | 스택 | 상태 | 상세 문서 |
 | :--- | :--- | :--- |
-| **MERN** | ✅ 진행 중 | [MERN STATUS](./mern/STATUS.md) |
+| **MERN** | ✅ 진행 중 (로컬 구축 완료) | [MERN STATUS](./mern/STATUS.md) |
 | **Go** | ⏳ 대기 | [Go ARCHITECTURE](./go/ARCHITECTURE.md) |
 | **FastAPI** | ⏳ 대기 | [FastAPI ARCHITECTURE](./fastapi/ARCHITECTURE.md) |
 | **Next.js** | ⏳ 대기 (pnpm 사용 예정) | [Nextjs ARCHITECTURE](./nextjs/ARCHITECTURE.md) |
@@ -27,4 +27,4 @@
 
 ---
 
-**마지막 업데이트**: 2026-02-27
+**마지막 업데이트**: 2026-02-27 (금)
