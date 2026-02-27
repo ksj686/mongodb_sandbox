@@ -1,28 +1,18 @@
-# Next.js (App Router) + MongoDB Sandbox Architecture
+# Next.js Stack Architecture
 
-Next.js는 서버 컴포넌트와 Server Actions를 통해 프런트엔드와 백엔드가 하나의 프로젝트로 통합된 개발 경험을 제공합니다.
+Next.js (App Router)와 MongoDB를 연동하는 아키텍처를 정의합니다.
 
-## Tech Stack
+## 1. 기술 스택 (Tech Stack)
 - **Framework**: Next.js (App Router)
-- **Database**: MongoDB (Atlas 또는 Local)
-- **ORM/ODM**: Prisma (또는 Native MongoDB Driver)
-- **Auth**: NextAuth.js (DB 연동 인증 실험)
+- **Language**: TypeScript
+- **Package Manager**: **pnpm** (권장: 설치 속도 및 의존성 관리 최적화)
+- **Database**: MongoDB (Mongoose 또는 MongoDB Native Driver)
+- **Styling**: Tailwind CSS 또는 Vanilla CSS
 
-## Directory Structure
-```text
-/nextjs/
-├── app/
-│   ├── api/            # API Route 핸들러
-│   ├── layout.tsx
-│   └── page.tsx        # UI & Server Components
-├── components/         # React 클라이언트 컴포넌트
-├── lib/                # DB 연결 유틸리티 (`mongodb-client.ts`)
-├── prisma/             # Prisma Schema 정의 (사용 시)
-└── package.json
-```
+## 2. 주요 목표
+- Server Components를 활용한 직접적인 DB 데이터 페칭.
+- Server Actions를 통한 데이터 생성 및 수정 로직 구현.
+- API Routes (Route Handlers) 실습.
 
-## Key Learning Points
-1. **Server-side Fetching**: 클라이언트 API 호출 없이 서버 컴포넌트에서 직접 DB 조회.
-2. **Server Actions**: `use server`를 통한 안전하고 직관적인 데이터 변경(Mutation).
-3. **Data Caching & Revalidation**: Next.js의 캐싱 메커니즘과 MongoDB 데이터 동기화.
-4. **Integration**: UI 개발과 DB 스키마 설계의 빠른 피드백 루프 경험.
+---
+*참고: 이 프로젝트는 npm 대신 pnpm을 사용하여 패키지 관리를 수행합니다.*
