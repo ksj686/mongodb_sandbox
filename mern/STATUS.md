@@ -12,14 +12,14 @@
   - **Infrastructure**: Docker Compose 기반 로컬 MongoDB 구축.
   - **Scripts**: `npm run seed`를 통한 테스트 데이터 자동 생성 로직.
   - **Security**: 가이드 문서의 민감 정보(URI) 제거 및 플레이스홀더화 완료.
+  - **Documentation**: `mern/README.md` 신규 생성 (실행 절차 및 핵심 개념 정리).
 
 ---
 
 ## 2. 예정 작업 (Next Steps)
-1. **MongoDB Atlas 전환**: [대기] 클라우드 DB 계정 생성 및 연결 문자열 `.env` 반영.
+1. **MongoDB Atlas 전환**: [진행 예정] 클라우드 DB 계정 생성 및 연결 문자열 `.env` 반영.
 2. **클라우드 데이터 시딩**: `npm run seed`를 실행하여 Atlas로 데이터 업로드 및 대시보드 확인.
-3. **입력 폼(Form) 추가**: 브라우저에서 사용자, 프로젝트, 할 일을 직접 생성할 수 있는 기능 구현.
-4. **Aggregation 심화**: 특정 태그별 할 일 개수 또는 우선순위별 통계 파이프라인 실습.
+3. **Aggregation 심화**: "특정 태그별 할 일 개수" 또는 "우선순위별 통계" 등 복잡한 파이프라인 실습.
 
 ---
 
